@@ -1,0 +1,147 @@
+@font-face{font-family:Sora;src:url(assets/fonts/Sora-Regular.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Sora;src:url(assets/fonts/Sora-SemiBold.woff2) format('woff2');font-weight:600;font-display:swap}
+
+:root{color-scheme:dark;--night:#181b19;--text:#eee9de;--muted:#a4aaa0;--rule:#343b34}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:flex;flex-direction:column;background:var(--night);color:var(--text);font:400 13px/1.5 Sora,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid #e9cf99;outline-offset:7px}
+.foyer-header,.foyer-footer{width:calc(100% - 96px);max-width:1440px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between}
+.foyer-header{height:106px;flex-shrink:0}
+.foyer-header>img{width:92px;height:auto}
+.header-note{color:var(--muted);font-size:10px}
+.foyer{width:100%;max-width:1260px;margin:auto;flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 44px 65px}
+.invitation{text-align:center;margin-bottom:38px}
+h1{margin:0;font:italic 400 clamp(62px,6.5vw,90px)/1.12 Georgia,'Times New Roman',serif;letter-spacing:-.055em}
+.invitation>p{font-size:11px;color:var(--muted);margin:14px 0 0;letter-spacing:.015em}
+.doors{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;position:relative;max-width:1050px;width:100%;margin:0 auto}
+.doors::before{content:'';position:absolute;top:305px;left:2%;right:2%;height:1px;background:linear-gradient(90deg,transparent,#abb29e17 15%,#abb29e17 85%,transparent);pointer-events:none}
+
+/* A moulded outer casing, a dark reveal, and a separate hinged leaf.
+   Every radius follows the same opening; perspective is anchored at the hinge. */
+.destination{
+  --light:#e8bd83;
+  --wood-low:#29231d;
+  --wood:#514032;
+  --wood-high:#6c5440;
+  --edge:#ad9065;
+  --frame-low:#342d25;
+  --frame:#665643;
+  --frame-high:#9c8868;
+  --room:#302921;
+  --opening-angle:68deg;
+  position:relative;display:block;border-radius:3px;isolation:isolate;
+}
+.room{height:330px;position:relative}
+.room::before{content:'';position:absolute;bottom:5px;left:50%;width:260px;height:45px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,#0008,transparent 68%);filter:blur(6px);pointer-events:none}
+.doorway{
+  --curve:3px;
+  position:absolute;bottom:26px;left:50%;width:212px;height:267px;
+  transform:translateX(-50%);perspective:720px;perspective-origin:0 50%;
+  border-radius:var(--curve) var(--curve) 0 0;
+  background:linear-gradient(100deg,var(--frame-high),var(--frame) 8%,var(--frame-low) 49%,var(--frame) 93%,var(--frame-low));
+  box-shadow:-1px -1px 0 #ddd4bd2b,1px 1px 0 #050806,3px 3px 0 #101410,7px 6px 12px #0005,0 17px 18px -11px #000c;
+}
+.doorway::before{
+  content:'';position:absolute;inset:4px 4px 0;
+  border:1px solid #e5dfbf38;border-bottom:0;border-radius:max(0px,calc(var(--curve) - 4px)) max(0px,calc(var(--curve) - 4px)) 0 0;
+  box-shadow:inset 1px 0 0 #0007,1px 0 0 #0008;pointer-events:none;
+}
+.doorway::after{
+  content:'';position:absolute;z-index:4;bottom:-5px;left:-4px;right:-4px;height:8px;
+  background:linear-gradient(#bbb09a 0 1px,#776e5d 1px 3px,#393c32 3px 6px,#141813 6px);
+  box-shadow:0 2px 2px #0009;
+}
+.interior{
+  position:absolute;inset:10px 11px 4px;overflow:hidden;
+  border-radius:max(0px,calc(var(--curve) - 10px)) max(0px,calc(var(--curve) - 10px)) 0 0;
+  background:radial-gradient(ellipse at 53% 22%,color-mix(in srgb,var(--light) 17%,var(--room)),var(--room) 65%);
+  box-shadow:inset 8px 0 10px #000a,inset -5px 0 7px #0009,inset 0 4px 10px #0008;
+}
+.interior::before{content:'';position:absolute;bottom:0;left:0;right:0;height:26px;background:linear-gradient(#64645245,#36392e);border-top:1px solid #a6a68b16;box-shadow:0 -6px 18px #0002}
+.interior::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0004,transparent 27%,transparent 78%,#0004),linear-gradient(#0003,transparent 26%,transparent 95%,#0003)}
+.kurt-scene{display:block;position:absolute;bottom:6px;left:53%;width:190px;max-width:100%;height:auto;transform:translateX(-50%);opacity:.94;transition:opacity .45s}
+.lamp{position:absolute;z-index:1;top:29px;left:52%;width:25px;height:4px;transform:translateX(-50%);border-radius:4px;background:var(--light);box-shadow:0 -3px 0 #24241c,0 -4px 0 #b5aa7e55,0 1px 0 #ffefcbcc,0 3px 8px color-mix(in srgb,var(--light) 35%,transparent);opacity:.85;transition:opacity .45s}
+.lamp::before{content:'';position:absolute;width:1px;height:29px;bottom:7px;left:50%;background:linear-gradient(#090d0a,#38392c)}
+.lamp::after{content:'';position:absolute;top:0;left:50%;width:150px;height:185px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at 50% 12%,color-mix(in srgb,var(--light) 12%,transparent),transparent 67%);filter:blur(7px);pointer-events:none}
+.door-leaf{
+  position:absolute;inset:12px 12px 5px;z-index:3;
+  transform-origin:0 50%;transform:rotateY(var(--opening-angle));
+  border-radius:max(1px,calc(var(--curve) - 12px)) max(1px,calc(var(--curve) - 12px)) 0 0;
+  background:linear-gradient(100deg,#ffffff0a,transparent 20%,#0003 95%),repeating-linear-gradient(92deg,#ffffff03 0 1px,transparent 1px 7px),linear-gradient(90deg,var(--wood-low),var(--wood) 14%,var(--wood-high) 90%,var(--wood-low));
+  box-shadow:inset 0 0 0 1px var(--edge),inset 2px 1px 1px #fff2,inset -3px 0 0 #0005,3px 0 0 var(--wood-low),5px 2px 6px #0006;
+  transition:transform .8s cubic-bezier(.18,.65,.2,1);
+}
+.door-leaf::after{content:'';position:absolute;top:1px;bottom:1px;right:1px;width:2px;background:linear-gradient(#cbb48377,#64503c,#cbb48333);border-radius:inherit}
+.door-panel{position:absolute;inset:17px 15px 19px;border:1px solid #c8b5933b;border-radius:max(0px,calc(var(--curve) - 30px)) max(0px,calc(var(--curve) - 30px)) 0 0;background:linear-gradient(120deg,#0002,transparent 40%,#fff1);box-shadow:inset 2px 2px 3px #0006,1px 1px 0 #f5e0b327}
+.door-panel::after{content:'';position:absolute;left:-1px;right:-1px;bottom:30%;height:7px;background:linear-gradient(#baa27b55,#241f19 1px,var(--wood) 3px,var(--wood-high) 6px);box-shadow:0 1px 0 #0008,0 -1px 0 #e4d7b31a}
+.door-hinges{position:absolute;top:22%;bottom:22%;left:0;width:4px}
+.door-hinges::before,.door-hinges::after{content:'';position:absolute;left:-1px;width:4px;height:10px;border-radius:1px;background:linear-gradient(90deg,#665235,#bca776 45%,#4b3e29);box-shadow:1px 0 2px #0009}
+.door-hinges::before{top:0}.door-hinges::after{bottom:0}
+.handle{position:absolute;right:11px;top:56%;width:6px;height:23px;border-radius:3px;background:linear-gradient(90deg,#665135,#d1bc88 40%,#8c754a);box-shadow:1px 1px 3px #0009,inset 0 0 0 1px #ffe3ac33}
+.handle::before{content:'';position:absolute;bottom:4px;left:2px;width:2px;height:4px;border-radius:2px;background:#332a1b}
+.handle::after{content:'';position:absolute;left:2px;top:6px;width:14px;height:3px;border-radius:2px;background:linear-gradient(#ecdbad,#907342);box-shadow:0 2px 2px #0008}
+.floor-light{position:absolute;z-index:-1;bottom:-6px;left:50%;width:242px;height:38px;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 0,color-mix(in srgb,var(--light) 16%,transparent),transparent 70%);filter:blur(4px);opacity:.65;transition:opacity .8s;pointer-events:none}
+
+/* The studio shares the cinema geometry at every breakpoint. Its former
+   arched leaf protruded above the frame when opened. Materials distinguish the rooms. */
+.studio{--light:#e0d6ad;--wood-low:#252c22;--wood:#48503e;--wood-high:#68705a;--edge:#b8b391;--frame-low:#373c32;--frame:#62665a;--frame-high:#9b9c83;--room:#2c3025;--opening-angle:69deg}
+
+.studio .kurt-scene{left:50%}
+.studio .door-panel::after{bottom:25%}
+.lab{--light:#b4d1d0;--wood-low:#1d2c2a;--wood:#324a44;--wood-high:#50635b;--edge:#8da29a;--frame-low:#202e2b;--frame:#3d514b;--frame-high:#80948a;--room:#25322f;--opening-angle:70deg}
+.lab .doorway{--curve:17px;width:212px;height:260px}
+.lab .door-panel{inset:17px 15px 37%;border-radius:4px;background:linear-gradient(135deg,#d9e8df0f,transparent 45%,#a2c6b612),repeating-linear-gradient(90deg,#bdcec90d 0 1px,#0e25244d 1px 4px);border-color:#b8cbc526;box-shadow:inset 3px 2px 4px #0009,1px 1px 0 #c8d8d333}
+.lab .door-panel::after{display:none}
+.lab .lamp{top:27px;width:43px;height:3px;border-radius:2px}
+.lab .lamp::before{display:none}
+.lab .handle{background:linear-gradient(90deg,#3c514c,#c3d0c9 45%,#6c8177)}
+.lab .handle::after{background:linear-gradient(#e6ede7,#7c9087)}
+
+.door-label{text-align:center;margin-top:22px;padding:0 5px}
+h2{font-size:17px;font-weight:600;line-height:1.3;letter-spacing:-.045em;margin:0}
+h2>span{font-weight:400}
+.door-label p{margin:10px 0 0;color:var(--muted);font-size:11px;line-height:1.5}
+.door-label p>span{display:inline-block;color:var(--light);margin-left:5px;transition:transform .3s}
+.preview-mark{display:inline-block;vertical-align:middle;margin-left:5px;color:#c6d0af;font-size:10px;letter-spacing:0;font-family:Georgia,'Times New Roman',serif;font-style:italic;transform:rotate(-8deg)}
+.destination:is(:hover,:focus-visible) .door-leaf{transform:rotateY(85deg)}
+.destination:is(:hover,:focus-visible) .kurt-scene{opacity:1}
+.destination:is(:hover,:focus-visible) .lamp,.destination:is(:hover,:focus-visible) .floor-light{opacity:1}
+.destination:is(:hover,:focus-visible) .door-label p>span{transform:translate(2px,-2px)}
+.foyer-footer{min-height:74px;gap:20px;padding-block:15px;color:var(--muted);font-size:10px}
+.byline strong{font-weight:600;color:#cdcfc3}
+.foyer-footer nav{display:flex;gap:21px}.foyer-footer a{min-height:40px;display:inline-flex;align-items:center}
+.foyer-footer a:hover{color:var(--text)}
+.motion-toggle{display:flex;align-items:center;gap:7px;min-height:40px;border:0;padding:8px 12px;background:transparent;color:var(--muted);font-size:10px;cursor:pointer}
+.motion-toggle:hover{color:var(--text)}
+.motion-toggle[hidden]{display:none}
+.skip{position:fixed;left:20px;top:-100px;padding:12px;background:#e9cf99;color:#181b19;z-index:100}
+.skip:focus{top:12px}
+
+@media(min-height:900px) and (min-width:761px){.foyer{padding-bottom:95px}.invitation{margin-bottom:48px}}
+@media(max-width:950px){.foyer-header,.foyer-footer{width:calc(100% - 56px)}.foyer{padding:30px 25px 50px}.doors{gap:5px}.doorway{width:184px}.lab .doorway{width:184px}.kurt-scene{width:175px}h2{font-size:15px}}
+@media(max-width:650px){
+  .foyer-header,.foyer-footer{width:calc(100% - 40px)}
+  .foyer-header{height:68px}.foyer-header>img{width:76px}.header-note{font-size:8px}
+  .foyer{padding:12px 20px 24px}.invitation{margin-bottom:20px}h1{font-size:54px}.invitation>p{font-size:10px;margin-top:10px}
+  .doors{grid-template-columns:1fr;gap:12px;max-width:390px}.doors::before{display:none}
+  .destination{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:15px;min-height:160px}
+  .room{height:160px;grid-column:1}.room::before{width:156px;height:24px;bottom:0}
+  .doorway{width:119px;height:141px;bottom:16px;--curve:2px;perspective:460px;box-shadow:-1px -1px 0 #ddd4bd26,1px 1px 0 #050806,2px 2px 0 #101410,5px 4px 9px #0005}
+  .doorway::before{inset:3px 3px 0}.doorway::after{left:-3px;right:-3px;height:5px;bottom:-3px;background:linear-gradient(#b1a68c 0 1px,#5b5b4b 1px 3px,#171b14 3px)}
+  .interior{inset:7px 7px 3px;border-radius:max(0px,calc(var(--curve) - 7px)) max(0px,calc(var(--curve) - 7px)) 0 0;box-shadow:inset 5px 0 6px #0009,inset -3px 0 5px #0007,inset 0 3px 6px #0008}.interior::before{height:17px}
+  .door-leaf{inset:8px 8px 4px;border-radius:max(0px,calc(var(--curve) - 8px)) max(0px,calc(var(--curve) - 8px)) 0 0;box-shadow:inset 0 0 0 1px var(--edge),inset 1px 1px 1px #fff2,inset -2px 0 0 #0005,2px 0 0 var(--wood-low),3px 2px 4px #0006}
+  .door-panel{inset:10px 9px 12px;border-radius:max(0px,calc(var(--curve) - 18px)) max(0px,calc(var(--curve) - 18px)) 0 0}.door-panel::after{height:5px}
+  .kurt-scene{width:108px;bottom:4px}.lamp{top:16px;width:17px;height:3px}.lamp::before{height:16px}.lamp::after{width:96px;height:110px;filter:blur(4px)}
+
+  .lab .doorway{width:119px;height:139px;--curve:10px}.lab .lamp{top:16px;width:29px;height:2px}.lab .door-panel{inset:10px 9px 37%;border-radius:3px}
+  .handle{right:7px;width:4px;height:15px}.handle::after{top:4px;width:8px;height:2px;left:1px}.handle::before{bottom:3px;left:1px;height:3px;width:1px}
+  .door-hinges{width:3px}.door-hinges::before,.door-hinges::after{width:3px;height:6px}
+  .floor-light{width:155px;height:26px;bottom:-4px;filter:blur(3px)}
+  .door-label{grid-column:2;grid-row:1;text-align:left;margin-top:8px;padding:0}.door-label h2{font-size:18px;line-height:1.25}.door-label h2>span:not(.preview-mark){display:block}.door-label p{font-size:11px;max-width:16ch;margin-top:12px}.door-label p>span{margin-left:2px}.preview-mark{display:block;margin:8px 0 0;font-size:13px;transform:rotate(-6deg);transform-origin:left}
+  .studio{grid-template-columns:1fr 1fr}.studio .room{grid-column:2}.studio .door-label{grid-column:1;text-align:right;padding-right:5px}.studio .preview-mark{transform-origin:right}.studio .door-label p{margin-left:auto}
+  .foyer-footer{flex-wrap:wrap;gap:2px 18px;padding-block:12px 22px;min-height:70px}.foyer-footer nav{margin-left:auto;gap:17px}.motion-toggle{order:3;justify-content:center;width:100%;padding-bottom:0;min-height:32px}
+}
+@media(max-width:350px){.header-note{display:none}.doorway{width:109px}.lab .doorway{width:109px}.door-label h2{font-size:17px}.destination{gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}.destination:is(:hover,:focus-visible) .door-leaf{transform:rotateY(var(--opening-angle))}}

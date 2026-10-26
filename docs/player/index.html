@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kurtz video player — All movie. No nonsense.</title>
+  <meta name="description" content="kurtz video player: free for your local files and your Jellyfin library. Download the public Mac beta. iPhone, iPad and Apple TV releases are in preparation.">
+  <meta name="theme-color" content="#1f1f1f">
+  <link rel="canonical" href="https://kurtz.app/player/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="kurtz video player — All movie. No nonsense.">
+  <meta property="og:description" content="A free Mac video player for your files and your Jellyfin library. The whole app, with room for the video. Mac beta available now.">
+  <meta property="og:url" content="https://kurtz.app/player/">
+  <meta property="og:image" content="https://kurtz.app/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="kurtz video player — All movie. No nonsense.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../assets/kurtz-icon.png">
+  <link rel="preload" href="../assets/fonts/Sora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="../index.html" aria-label="kurtz home"><img class="wordmark" src="../assets/kurtz-wordmark-dark.svg" alt="kurtz" width="400" height="128"></a>
+  <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#foundation">Our foundation</a><a href="#platforms">Platforms</a></nav>
+  <a class="nav-cta" href="#get-kurtz">Get kurtz <span aria-hidden="true">↓</span></a>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-head wrap">
+      <h1 id="hero-title">All movie.<br>No nonsense.</h1>
+      <div class="hero-intro">
+        <p class="intro">kurtz video player. Free, for your files and your Jellyfin library.</p>
+        <div class="actions"><a class="button" href="https://github.com/ralleur/kurtz/releases/download/kurtz-0.9.7/kurtz-0.9.7-macOS-universal-r3.dmg">Download for Mac <span aria-hidden="true">↓</span></a></div>
+        <p class="release-note">0.9.7 beta · macOS 15.6+<br><a href="#platforms">iPhone, iPad &amp; Apple TV status</a></p>
+      </div>
+    </div>
+
+    <div class="cinema wrap" id="experience" data-player-comparison>
+      <figure class="stage">
+        <a class="capture-link" href="../assets/desktop-clean-1152.webp" aria-label="Open the full-size Mac capture: controls hidden">
+          <img id="comparison-image" src="../assets/desktop-clean-1152.webp" srcset="../assets/desktop-clean-384.webp 384w, ../assets/desktop-clean-768.webp 768w, ../assets/desktop-clean-1152.webp 1152w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1216px) calc(100vw - 64px), 1152px" width="1152" height="720" fetchpriority="high" alt="Caminandes playing in the real kurtz window, staged on a Mac desktop with Finder, Notes and a subtle pug wallpaper. Controls are hidden.">
+        </a>
+        <figcaption class="capture-caption"><span>Real kurtz capture · Staged desktop · <span class="capture-state" aria-live="polite">Controls hidden</span></span><span>Caminandes © Blender Foundation · <a href="../credits.html">Credits</a></span></figcaption>
+      </figure>
+      <div class="stage-bottom">
+        <div class="stage-copy"><h2>Room for the video.</h2><p>Choose a track. Find your scene. Let the controls step back.</p></div>
+        <div class="comparison-tools">
+          <div class="state-switch" role="group" aria-label="Compare the same frame with and without playback controls" hidden>
+            <button type="button" aria-pressed="false" aria-controls="comparison-image" data-state="controls">With controls</button>
+            <button type="button" aria-pressed="true" aria-controls="comparison-image" data-state="clean">Controls hidden</button>
+          </div>
+          <p class="comparison-note">Same frame. Same desktop. <a class="enlarge-link" href="../assets/desktop-clean-1152.webp">View full size <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </div>
+      <p class="comparison-fallback">Controls hidden above. <a href="../assets/desktop-controls-1152.webp">See the same frame with controls visible.</a></p>
+    </div>
+  </section>
+
+  <section class="ways wrap section-space" aria-labelledby="ways-title">
+    <div class="section-heading"><h2 id="ways-title">Two ways in.<br>One player.</h2><p>A video on your Mac or a film on your server. Start where it lives. Both open in the same player, with the same familiar controls.</p></div>
+    <div class="ways-grid">
+      <article>
+        <div class="way-copy"><h3>Open your file.</h3><p>Press <kbd>⌘O</kbd>, choose a video and watch. Your own clips, a saved film, an MKV in Downloads. No account or Jellyfin server needed.</p></div>
+        <figure><a class="shot-link" href="../assets/desktop-open-1152.webp" aria-label="Enlarge the Mac Open Video panel"><img src="../assets/desktop-open-1152.webp" width="1152" height="720" loading="lazy" alt="The real macOS Open Video panel with Caminandes.mp4 selected, staged on the same pug desktop."></a><figcaption>From your Mac · Real Open panel, staged desktop</figcaption></figure>
+      </article>
+      <article>
+        <div class="way-copy"><h3>Choose from your library.</h3><p>Connect your Jellyfin server, browse your titles and press play. Your server’s library and watch progress, in an app that also opens local files.</p></div>
+        <figure><a class="shot-link" href="../assets/desktop-library-1152.webp" aria-label="Enlarge the Jellyfin film detail capture"><img src="../assets/desktop-library-1152.webp" width="1152" height="720" loading="lazy" alt="Sintel’s real Jellyfin detail page in kurtz, staged on the same Mac desktop with the subtle pug wallpaper."></a><figcaption>From your server · Real library, staged desktop</figcaption></figure>
+      </article>
+    </div>
+    <p class="detail ways-note">Jellyfin needs an existing server and access to it. Local playback keeps its own history on your Mac; it does not sync a local file with a server copy.</p>
+  </section>
+
+  <section class="comfort wrap section-space" aria-labelledby="comfort-title">
+    <div class="comfort-copy"><h2 id="comfort-title">Settle in.</h2><p class="section-lead">The everyday things, close at hand.</p>
+      <dl class="comfort-list">
+        <div><dt>Your audio. Your subtitles.</dt><dd>Choose an available audio or subtitle track, or add an external subtitle file. Timing adjustments live in the track menus.</dd></div>
+        <div><dt>Your place, remembered.</dt><dd>Return to a recent local video where you left it, with your track choices. History stays on your Mac; clear it or turn it off in Settings.</dd></div>
+        <div><dt>A few familiar keys.</dt><dd><kbd>Space</kbd> to pause. Arrow keys to seek. Keep your attention on the video, with the next action at your fingertips.</dd></div>
+      </dl>
+    </div>
+    <figure class="comfort-shot"><img src="../assets/subtitles.webp" width="420" height="430" loading="lazy" alt="The actual subtitle menu, showing language tracks, Add Subtitle File and Timing, beside the Audio menu."><figcaption>A closer look · the real Mac track menus</figcaption></figure>
+  </section>
+
+  <section class="foundation section-space" id="foundation" aria-labelledby="foundation-title">
+    <div class="wrap">
+      <div class="foundation-top"><p>Free &amp; open source</p><img src="../assets/kurtz-symbol-light.svg" width="160" height="132" alt="" loading="lazy"></div>
+      <h2 id="foundation-title">The whole app.<br>No upgrade required.</h2>
+      <div class="foundation-grid">
+        <div class="free-copy"><p>No subscription. No in-app purchases. No Pro unlock. The current app is free to use, from the first local video to your Jellyfin library.</p><p>No trial to keep track of. No feature tier to choose.</p><a class="text-link" href="https://github.com/ralleur/kurtz">Explore the source <span aria-hidden="true">↗</span></a></div>
+        <div class="origin"><h3>Built on Swiftfin.<br>With gratitude.</h3><p>Swiftfin and its contributors built the native Apple Jellyfin client foundation that makes kurtz possible. kurtz is a fork of that work, adding local-file playback on Mac alongside the library experience.</p><div class="origin-links"><a class="text-link" href="https://github.com/jellyfin/Swiftfin">Explore Swiftfin</a><span aria-hidden="true"> · </span><a class="text-link" href="https://github.com/jellyfin/Swiftfin/graphs/contributors">Meet its contributors <span aria-hidden="true">↗</span></a></div><p class="detail affiliation">kurtz is independent. It is not an official or endorsed Jellyfin or Swiftfin application.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="get wrap section-space" id="get-kurtz" aria-labelledby="get-title">
+    <div class="section-heading"><h2 id="get-title">Your next video<br>starts here.</h2><p>Start with the Mac beta. Download the disk image, then drag kurtz into Applications.</p></div>
+    <div class="platforms" id="platforms" role="region" aria-label="Downloads and platform availability">
+      <article class="mac-download" aria-labelledby="mac-title">
+        <div><p class="availability">Available now · public beta</p><h3 id="mac-title">kurtz video player for Mac</h3><p>Local files and Jellyfin.<br>macOS 15.6+ · Apple silicon &amp; Intel</p></div>
+        <div class="download-action"><a class="button" href="https://github.com/ralleur/kurtz/releases/download/kurtz-0.9.7/kurtz-0.9.7-macOS-universal-r3.dmg">Download kurtz 0.9.7 <span aria-hidden="true">↓</span></a><p class="release-note">Version 0.9.7 · build 9 · Universal DMG<br>Developer ID signed &amp; notarized by Apple</p><a class="text-link" href="https://github.com/ralleur/kurtz/releases/tag/kurtz-0.9.7">Release notes &amp; upgrade instructions <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <div class="upcoming-platforms">
+        <article><p class="availability">In development</p><h3>iPhone &amp; iPad</h3><p>Local videos from Files and Jellyfin.<br>Target: iOS / iPadOS 18.6 or later.</p><p class="detail">App Store release in preparation. No public download or TestFlight invite.</p></article>
+        <article><p class="availability">Release in preparation</p><h3>Apple TV</h3><p>Jellyfin browsing and playback.<br>Target: tvOS 26.1 or later. No local-file workflow.</p><p class="detail">Source builds available. No public App Store or TestFlight release.</p></article>
+      </div>
+      <p class="detail platform-note">Mobile and TV still need physical-device qualification and Apple review. Windows and Linux are not supported. <a href="https://github.com/ralleur/kurtz/blob/kurtz/docs/release/apple-release-plan.md">Apple release plan <span aria-hidden="true">↗</span></a></p>
+      <details class="technical-details"><summary>Beta limits, playback &amp; building from source</summary><div>
+        <p>Mac runtime checks were on Apple silicon. Intel, the oldest supported operating systems and long-session reliability still need qualification. Simulator builds do not establish device playback or Store approval.</p>
+        <p>VLC is the default local engine; mpv is the alternative. Format, HDR and audio behavior depend on the engine and file. The floating mini player is a kurtz window, separate from system Picture-in-Picture.</p>
+        <p><a href="https://github.com/ralleur/kurtz/blob/kurtz/docs/product-audit.md">Verified product status</a> · <a href="https://github.com/ralleur/kurtz/blob/kurtz/docs/BUILDING.md">Build from source</a> · <a href="https://github.com/ralleur/kurtz/releases/download/kurtz-0.9.7/kurtz-0.9.7-macOS-universal-r3.dmg.sha256">Download checksum</a> · <a href="https://github.com/ralleur/kurtz/blob/kurtz/docs/release/README.md">Release sources &amp; licenses</a></p>
+      </div></details>
+    </div>
+  </section>
+
+  <section class="more wrap section-space" id="more" aria-labelledby="more-title">
+    <div class="section-heading"><h2 id="more-title">There’s more<br>to kurtz.</h2><p><strong>Your digital life. Actually yours.</strong> kurtz brings your films, photos and documents into one calm app that runs on your own hardware. It is in development. The video player stays free and complete on its own, with or without it.</p></div>
+  </section>
+</main>
+<footer class="wrap"><div class="footer-top"><a class="brand" href="../index.html" aria-label="kurtz home"><img class="wordmark" src="../assets/kurtz-wordmark-dark.svg" alt="kurtz" width="400" height="128" loading="lazy"></a><nav aria-label="Footer"><a href="https://github.com/ralleur/kurtz">GitHub</a><a href="../credits.html">Media &amp; credits</a><a href="../privacy.html">Privacy</a></nav></div><div class="footer-bottom"><p>kurtz by <a href="https://www.youtube.com/@ralleurapps">Ralleur</a>. Built on Swiftfin.</p><p>Real Mac captures. Films © Blender Foundation &amp; Caminandes team.<br><a href="../credits.html">Media sources, adaptations &amp; licenses</a></p></div></footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#181b19">
+  <title>kurtz — Come on in.</title>
+  <meta name="description" content="A place to press play, a peek at what's next, and a little lab for local AI. Come on in.">
+  <link rel="icon" href="assets/kurtz-icon.png">
+  <link rel="canonical" href="https://kurtz.app/">
+  <link rel="stylesheet" href="portal.css">
+  <script defer src="family.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="foyer-header">
+  <img src="assets/kurtz-wordmark-dark.svg" width="400" height="128" alt="kurtz">
+  <span class="header-note">a small corner of the internet.</span>
+</header>
+<main id="main" class="foyer">
+  <div class="invitation"><h1>Come on in.</h1><p>Make yourself at home.</p></div>
+  <nav class="doors" aria-label="Explore the kurtz universe">
+    <a class="destination cinema" href="player/" aria-labelledby="player-name player-note">
+      <div class="room" aria-hidden="true">
+        <div class="doorway">
+          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/cinema-poster.webp" data-animated-src="assets/kurt/cinema.webp" data-duration="6000" width="768" height="512" alt="" decoding="async"></div>
+          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
+        </div>
+        <span class="floor-light"></span>
+      </div>
+      <div class="door-label"><h2 id="player-name">kurtz <span>video player</span></h2><p id="player-note">Press play. <span aria-hidden="true">↗</span></p></div>
+    </a>
+    <a class="destination studio" href="preview/" aria-labelledby="preview-name preview-note">
+      <div class="room" aria-hidden="true">
+        <div class="doorway">
+          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/operator-poster.webp" data-animated-src="assets/kurt/operator.webp" data-duration="4167" width="768" height="512" alt="" decoding="async"></div>
+          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
+        </div>
+        <span class="floor-light"></span>
+      </div>
+      <div class="door-label"><h2 id="preview-name">kurtz <span class="preview-mark">preview</span></h2><p id="preview-note">A little look ahead. <span aria-hidden="true">↗</span></p></div>
+    </a>
+    <a class="destination lab" href="gassi/" aria-labelledby="gassi-name gassi-note">
+      <div class="room" aria-hidden="true">
+        <div class="doorway">
+          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/benchmark-poster.webp" data-animated-src="assets/kurt/benchmark.webp" data-duration="2000" width="768" height="512" alt="" decoding="async"></div>
+          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
+        </div>
+        <span class="floor-light"></span>
+      </div>
+      <div class="door-label"><h2 id="gassi-name">gassi <span>benchmark</span></h2><p id="gassi-note">Coming soon. <span aria-hidden="true">↗</span></p></div>
+    </a>
+  </nav>
+</main>
+<footer class="foyer-footer">
+  <a class="byline" href="https://www.youtube.com/@ralleurapps">a place by <strong>ralleur.</strong></a>
+  <button class="motion-toggle" type="button" data-motion-toggle hidden><span aria-hidden="true">Ⅱ</span><span data-motion-label>Pause animations</span></button>
+  <nav aria-label="More links"><a href="privacy.html">Privacy</a><a href="credits.html#kurt">Credits</a></nav>
+</footer>
+</body>
+</html>
