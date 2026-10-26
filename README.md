@@ -20,7 +20,9 @@ compositions remain CC BY-SA 3.0. Brand and third-party marks retain their
 respective owners. AI-assisted design and implementation; no exclusive rights
 in generated material are asserted.
 
-The product tour shows unretouched captures of the current web interface with
-fictional example documents, email and a scripted assistant answer. See the
-visible capture notes and credits. No real personal data or fixture source
-is included.
+The product story uses English presentation captures of the development web
+interface, with translated labels, the official wordmark, fictional documents
+and email, and a scripted assistant answer. These are adapted presentation
+views, not unmodified production captures or proof of shipped localization.
+See the visible preview notes and credits. No real personal data or fixture
+source is included.

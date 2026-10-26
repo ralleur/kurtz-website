@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#1b1d1a">
-  <title>A look inside kurtz — Your digital life. Actually yours.</title>
-  <meta name="description" content="See kurtz at work: documents, email and a private assistant in one place. Actual app views with fictional example data. In development for hardware you control.">
-  <meta property="og:title" content="A look inside kurtz">
-  <meta property="og:description" content="Documents, email, photos and films. A first look at kurtz, with actual app views and fictional example data.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#1f1f1f">
+  <title>kurtz — Your digital life. Actually yours.</title>
+  <meta name="description" content="Your documents, email, photos and films, together with a private AI assistant. Meet kurtz: a simpler digital life, on hardware you control. In development.">
+  <meta property="og:title" content="kurtz — Your digital life. Actually yours.">
+  <meta property="og:description" content="Your life is more than your life admin. Meet your private digital home.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kurtz.app/preview/">
-  <meta property="og:image" content="https://kurtz.app/assets/product/documents-and-assistant.jpg">
+  <meta property="og:image" content="https://kurtz.app/assets/product/documents-en.jpg">
   <link rel="icon" href="../assets/kurtz-icon.png">
   <link rel="canonical" href="https://kurtz.app/preview/">
   <link rel="stylesheet" href="../family.css">
@@ -23,91 +23,52 @@
   <a class="brand" href="../index.html" aria-label="kurtz home"><img src="../assets/kurtz-wordmark-dark.svg" width="400" height="128" alt="kurtz"></a>
   <nav aria-label="Main navigation">
     <a href="../player/">video player</a>
-    <a href="../preview/" aria-current="page">kurtz <span class="tiny">preview</span></a>
-    <a href="../gassi/">gassi benchmark <span aria-hidden="true">↗</span></a>
+    <a href="./" aria-current="page">kurtz <span class="tiny">preview</span></a>
+    <a href="../gassi/" aria-label="gassi benchmark">gassi<span class="nav-descriptor"> benchmark</span> <span aria-hidden="true">↗</span></a>
   </nav>
   <a class="publisher" href="https://www.youtube.com/@ralleurapps">by ralleur</a>
 </header>
-
 <main id="main">
-  <section class="shell introduction" aria-labelledby="page-title">
-    <div class="page-heading">
-      <p class="edition">A product in the making <span>October 2026</span></p>
-      <h1 id="page-title">A look inside kurtz</h1>
-    </div>
-    <div class="opening-note">
-      <p>Documents, email, photos and films, together in one place. With a private assistant to help with the finding, sorting and everyday admin — on hardware you control.</p>
-      <p>Here’s what that looks like.</p>
-    </div>
+  <section class="introduction shell" aria-labelledby="page-title">
+    <p class="eyebrow"><span class="preview-dot" aria-hidden="true"></span> Meet your private digital home</p>
+    <h1 id="page-title">Your life is more<br>than your life admin.</h1>
+    <p class="intro-copy">kurtz brings your documents, email, photos and films together.<br class="desktop-break"> With a private AI assistant to help you find what you need<br class="desktop-break"> and get on with your day.</p>
+    <div class="intro-actions"><a class="action" href="#everyday">Take a closer look <span aria-hidden="true">↓</span></a><a class="text-link" href="#availability">In development <span aria-hidden="true">↗</span></a></div>
   </section>
 
-  <nav class="shell page-index" aria-label="On this page">
-    <a href="#documents"><span>01</span> The paperwork</a>
-    <a href="#mail"><span>02</span> The inbox</a>
-    <a href="#assistant"><span>03</span> A question</a>
-    <a class="index-note" href="#about-captures">Actual app views · fictional data <span aria-hidden="true">↓</span></a>
-  </nav>
+  <figure class="shell hero-product">
+    <a class="product-image" href="../assets/product/documents-en.jpg" aria-label="View the full desktop product preview">
+      <picture><source media="(max-width: 600px)" srcset="../assets/product/documents-mobile-en.jpg" width="430" height="800"><img src="../assets/product/documents-en.jpg" width="1628" height="848" alt="kurtz with Documents open: search, scan, everyday categories and recent files. A private conversation sits beside them, finding a washing machine receipt." fetchpriority="high"></picture>
+    </a>
+    <figcaption>Development preview · English presentation · example data<a href="#preview-notes">About this preview <span aria-hidden="true">↗</span></a></figcaption>
+  </figure>
 
-  <section id="documents" class="shell product-plate" aria-labelledby="documents-title">
-    <figure class="wide-capture">
-      <a href="../assets/product/documents-and-assistant.jpg" aria-label="Open the full-size screenshot of documents and the assistant">
-        <picture>
-          <source media="(max-width: 600px)" srcset="../assets/product/documents-mobile.jpg" width="430" height="1000">
-          <img src="../assets/product/documents-and-assistant.jpg" width="1628" height="848" alt="kurtz web app: document search, scan button, eight everyday categories and recent documents. The assistant is open beside them on desktop." fetchpriority="high">
-        </picture>
-      </a>
-      <figcaption><span>01 / Documents</span><span>Web app · desktop and mobile layouts <a href="../assets/product/documents-and-assistant.jpg">Full size ↗</a></span></figcaption>
-    </figure>
-    <div class="plate-notes">
-      <h2 id="documents-title">The paperwork drawer,<br>without the rummaging.</h2>
-      <div class="plate-description"><p>A payslip, the rental agreement, an appliance receipt. Search your documents, add a scan or start with a familiar part of life, such as home or family.</p><p>Your assistant can stay beside the document view. You can ask about what you’re looking for without leaving your things behind.</p></div>
-      <p class="margin-note"><span aria-hidden="true">↳</span> Categories use everyday names. The technical services behind them stay out of this view.</p>
+  <section id="everyday" class="shell everyday" aria-labelledby="everyday-title">
+    <div class="section-intro"><p class="eyebrow">Your assistant, with your things</p><h2 id="everyday-title">Start with what’s<br>on your mind.</h2><p>You remember buying it. You don’t remember where you put the receipt. Ask kurtz, in your own words.</p></div>
+    <div class="question-story">
+      <div class="question-copy"><span class="story-label">An everyday example</span><blockquote>“Where’s the receipt for the washing machine?”</blockquote><p>In this example, the assistant finds the saved document and the email it arrived with. The sources stay attached to the answer, so you can check the originals.</p><a class="source-link" href="#original">And here’s the receipt <span aria-hidden="true">↓</span></a></div>
+      <figure class="answer-detail"><img src="../assets/product/answer-en.jpg" width="420" height="390" alt="Example conversation: the receipt dated 12 October is in Documents and in an email from Home Store. Source 1 and Source 2 open the originals." loading="lazy"><figcaption>English presentation · scripted example answer</figcaption></figure>
+    </div>
+    <div id="original" class="source-story">
+      <div class="source-heading"><h3>Go straight<br>to the original.</h3><p>Open the document beside the conversation.<br>Read it for yourself. Keep the context.</p></div>
+      <figure><a class="product-image" href="../assets/product/source-en.jpg" aria-label="View the full preview of the receipt open beside the conversation"><picture><source media="(max-width: 600px)" srcset="../assets/product/source-mobile-en.jpg" width="430" height="800"><img src="../assets/product/source-en.jpg" width="1368" height="638" alt="The source opens in kurtz: a fictional Home Store receipt for a €479 washing machine, with the original conversation alongside it." loading="lazy"></picture></a><figcaption>From question to original, in the same place.</figcaption></figure>
     </div>
   </section>
 
-  <section id="mail" class="shell mail-plate" aria-labelledby="mail-title">
-    <div class="mail-heading"><span class="plate-number">02</span><h2 id="mail-title">And the things<br>that arrive by email.</h2><p>The inbox is part of the same place. Read a message, search archived mail and attachments, or bring a useful attachment into your documents.</p></div>
-    <figure class="wide-capture">
-      <a href="../assets/product/mail-and-assistant.jpg" aria-label="Open the full-size inbox screenshot"><picture><source media="(max-width: 600px)" srcset="../assets/product/mail-mobile.jpg" width="430" height="1000"><img src="../assets/product/mail-and-assistant.jpg" width="1628" height="848" alt="kurtz inbox with fictional messages from Lena, a household shop, an employer and a property manager. The assistant remains alongside the inbox." loading="lazy"></picture></a>
-      <figcaption><span>02 / Email</span><span>Web app · fictional inbox <a href="../assets/product/mail-and-assistant.jpg">Full size ↗</a></span></figcaption>
-    </figure>
-    <p class="mail-footnote">The current email integration is for WEB.DE. Your archive stays on your own hardware.</p>
-  </section>
+  <section id="together" class="together-band" aria-labelledby="together-title"><div class="shell together">
+    <div class="together-copy"><p class="eyebrow">A place for the rest of life, too</p><h2 id="together-title">More than<br>paperwork.</h2><p>The email with the attachment. The photos from the weekend. The film you’ve been meaning to finish. Your own collection, with a familiar way in.</p><ul class="content-list"><li><span>Documents</span><span>Find, scan and read</span></li><li><span>Email</span><span>Your inbox and archive</span></li><li><span>Photos</span><span>Your gallery and albums</span></li><li><span>Films &amp; series</span><span>Your library, ready to play</span></li></ul></div>
+    <figure class="mail-detail"><a class="product-image" href="../assets/product/mail-en.jpg" aria-label="View the email product preview"><img src="../assets/product/mail-en.jpg" width="430" height="800" alt="English inbox preview with fictional messages: a weekend invitation, a washing machine receipt, and the beginning of a payslip message." loading="lazy"></a><figcaption>Your inbox, at home in kurtz.<br>Current email integration: WEB.DE.</figcaption></figure>
+  </div></section>
 
-  <section id="assistant" class="shell assistant-plate" aria-labelledby="assistant-title">
-    <div class="assistant-copy">
-      <span class="plate-number">03</span>
-      <h2 id="assistant-title">“Where’s the receipt<br>for the washing machine?”</h2>
-      <p>That’s an ordinary question. You shouldn’t have to remember which app holds the answer.</p>
-      <p>In this example, kurtz points to the saved document and the email it came with. Source buttons let you go back to the originals and check for yourself.</p>
-      <p class="example-note">The answer shown here is scripted example data in the real interface. It illustrates the workflow; it isn’t a measured AI result.</p>
-      <div class="also-here"><span>Also at home in kurtz</span><p>Your photos and films have their own gallery and library in the same navigation. This first tour focuses on paperwork and email.</p><a href="../player/">Meet the standalone video player <span aria-hidden="true">↗</span></a></div>
-    </div>
-    <figure class="phone-capture">
-      <a href="../assets/product/assistant-mobile.jpg" aria-label="Open the full-size mobile assistant screenshot"><img src="../assets/product/assistant-mobile.jpg" width="430" height="1000" alt="Mobile kurtz web app with the fictional washing-machine question, an example answer and two source buttons." loading="lazy"></a>
-      <figcaption>03 / The assistant · mobile web app</figcaption>
-    </figure>
-  </section>
+  <section id="yours" class="ownership" aria-labelledby="ownership-title"><div class="shell ownership-inner">
+    <div class="ownership-heading"><img src="../assets/kurtz-symbol-light.svg" width="256" height="256" alt="" loading="lazy"><p class="eyebrow">Built around a simple belief</p><h2 id="ownership-title">Your digital life.<br>Actually yours.</h2></div>
+    <div class="ownership-copy"><p>Your private life should have a home that belongs to you. kurtz is being built to keep your collection and your AI on hardware you control.</p><p>With local AI, your private content doesn’t have to travel to an AI provider to be useful.</p><details><summary>What runs where? <span aria-hidden="true">+</span></summary><div><p>The first version is being developed around an Apple Silicon Mac at home, with access through kurtz on Mac, iPhone, iPad and in the browser.</p><p>Connected services, such as your email provider, still have their own data arrangements. External AI is an optional, explicit choice. kurtz doesn’t automatically switch from a local model to the cloud.</p></div></details></div>
+  </div></section>
 
-  <section class="product-letter" aria-labelledby="approach-title">
-    <div class="shell letter-layout">
-      <div class="letter-label"><span>A note on the idea</span><span class="letter-mark" aria-hidden="true">k.</span></div>
-      <div class="letter-copy">
-        <h2 id="approach-title">What we choose to leave out</h2>
-        <p>Private digital life already asks enough of you. Another application should earn its place by taking some of that work away.</p>
-        <p>That is the test for kurtz: keep the useful capability, then remove as much complexity as possible. Fewer technical decisions in everyday use. Less switching between places. Details within reach when you need them.</p>
-        <p>Privacy belongs in that design from the start. Your storage and AI can run on your own hardware. Local AI doesn’t require sending your private content to an AI provider.</p>
-        <details><summary>Hardware, connected services and optional cloud AI <span aria-hidden="true">+</span></summary><div><p>The first version is being developed around an Apple Silicon Mac at home, with kurtz on Mac, iPhone, iPad and in the browser.</p><p>Connected services, such as an existing email provider, keep their own data arrangements. External AI is an optional, explicit choice. There is no automatic switch from a local model to a cloud provider.</p></div></details>
-        <p class="letter-signoff">Your digital life. Actually yours.</p>
-      </div>
-    </div>
-  </section>
+  <section id="availability" class="shell availability" aria-labelledby="availability-title"><p class="eyebrow">A first look at what’s next</p><h2 id="availability-title">In private development.</h2><p>kurtz is in private development. We’re taking the time to make<br class="desktop-break"> the everyday feel simple. A public release date and pricing<br class="desktop-break"> haven’t been announced yet.</p><a class="action" href="../player/">Explore the video player <span aria-hidden="true">↗</span></a><p class="player-note">Our standalone video player is available now.</p></section>
 
-  <section id="availability" class="shell colophon" aria-labelledby="availability-title">
-    <div><h2 id="availability-title">Still being made.</h2><p>kurtz is in private development. There’s no public download or announced launch date for the full app yet.</p><p>The standalone <a href="../player/">kurtz video player</a> is available now.</p></div>
-    <div id="about-captures"><h3>About these pictures</h3><p>Unretouched captures of the current web app, shown with fictional documents, people, email and a scripted assistant answer. The interface shown is German. Layouts and features may change before release.</p><a href="../credits.html#product-captures">Capture details &amp; credits <span aria-hidden="true">↗</span></a></div>
-  </section>
+  <aside id="preview-notes" class="shell preview-notes" aria-label="About the product preview"><p><strong>About this preview.</strong> These are captures of the development web interface, prepared for this English presentation with translated labels and the official wordmark. Documents, messages and the assistant answer are fictional. The answer is scripted, not a model performance result. The design may evolve before release.</p><a href="../credits.html#product-captures">Image details &amp; credits <span aria-hidden="true">↗</span></a></aside>
 </main>
-<footer class="shell footer"><div><strong>kurtz</strong><span>by ralleur</span></div><nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../credits.html">Credits</a></nav></footer>
+<footer class="shell footer"><div><img src="../assets/kurtz-wordmark-dark.svg" width="400" height="128" alt="kurtz"><span>by ralleur</span></div><nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../credits.html">Credits</a></nav></footer>
 </body>
 </html>
