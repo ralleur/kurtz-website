@@ -2,6 +2,7 @@
   "scope": "static-website-only",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CNAME": "ac8b12997642627121c601753012abb6aec89e5204a2c314ddd0b6eb033e865f",
     "assets/desktop-clean-1152.webp": "b65b75b2698918f663c0325320fd7b4d12d4e71f0016ea853eb15a0c383a2727",
     "assets/desktop-clean-384.webp": "9da758aed45dbc117ce1861aac19e52cbe56d7418dd0e39209296099f3466649",
     "assets/desktop-clean-768.webp": "72c3991e1ce02d9023a8f8d7422432fa2db5ee4e20b7995c42e9c709ea39e7c1",
