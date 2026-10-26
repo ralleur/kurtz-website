@@ -2,7 +2,7 @@
 .kurtz-page{--paper:#1f1f1f;--surface:#262626;--ink:#faf8f1;--muted:#b8b8b2;--line:#41413e;--accent:#ffe600;background:var(--paper);color:var(--ink)}
 .kurtz-page .shell{width:calc(100% - 96px);max-width:1180px}
 .kurtz-page h1,.kurtz-page h2,.kurtz-page h3{font-family:Sora,system-ui,sans-serif;font-weight:600;letter-spacing:-.055em}
-.kurtz-page .nav{min-height:82px;max-width:1400px;border-color:#3b3b38}.kurtz-page .brand,.kurtz-page .brand img{width:94px}.kurtz-page .nav nav{gap:28px}.kurtz-page .nav nav a{font-size:11px;display:inline-flex;align-items:center;min-height:44px}.kurtz-page .publisher{font-size:11px}.kurtz-page .tiny{border-color:#66665e;font-size:8px}
+.kurtz-page .nav{min-height:82px;max-width:1400px;border-color:#3b3b38}.kurtz-page .brand,.kurtz-page .brand img{width:94px}.kurtz-page .nav nav{gap:28px}.kurtz-page .nav nav a{font-size:11px;display:inline-flex;align-items:center;gap:4px;min-height:44px}.kurtz-page .publisher{font-size:11px}.kurtz-page .tiny{border-color:#66665e;font-size:8px}
 .kurtz-page .eyebrow{font-size:12px;letter-spacing:0;font-weight:600;color:var(--muted)}
 .introduction{text-align:center;padding-block:65px 46px}.introduction>.eyebrow{justify-content:center;gap:10px}.preview-dot{background:var(--accent);width:7px;height:7px;border-radius:50%}
 .kurtz-page h1{font-size:clamp(42px,5.3vw,78px);line-height:1.08;margin-top:23px}.intro-copy{font-size:17px;line-height:1.75;margin:25px auto 0;max-width:65ch;letter-spacing:-.025em}
