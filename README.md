@@ -4,7 +4,7 @@ Public static website for [kurtz.app](https://kurtz.app/).
 
 - `/`: the three-door landing page
 - `/player/`: the existing free video player
-- `/preview/`: the kurtz product story
+- `/preview/`: the kurtz product tour
 - `/gassi/`: Coming soon
 
 GitHub Pages serves `docs/` from `main`. This repository contains only the
@@ -19,3 +19,8 @@ retain their own licenses and credits: see [Credits](docs/credits.html),
 compositions remain CC BY-SA 3.0. Brand and third-party marks retain their
 respective owners. AI-assisted design and implementation; no exclusive rights
 in generated material are asserted.
+
+The product tour shows unretouched captures of the current web interface with
+fictional example documents, email and a scripted assistant answer. See the
+visible capture notes and credits. No real personal data or fixture source
+is included.
