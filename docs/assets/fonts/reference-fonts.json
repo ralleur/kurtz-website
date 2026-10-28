@@ -1,0 +1,16 @@
+[
+  {
+    "file": "BarlowCondensed-800.ttf",
+    "family": "Barlow Condensed",
+    "weight": "800",
+    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1_3E.ttf",
+    "sha256": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+  },
+  {
+    "file": "IBMPlexMono-400.ttf",
+    "family": "IBM Plex Mono",
+    "weight": "400",
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n5ig.ttf",
+    "sha256": "a7fdc993f9f0387caedba4e42521136fa97e4c0837ae6239bf0413ccf8af00c2"
+  }
+]

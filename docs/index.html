@@ -3,60 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#181b19">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f3ebdd">
   <title>kurtz — Come on in.</title>
   <meta name="description" content="A place to press play, a peek at what's next, and a little lab for local AI. Come on in.">
   <link rel="icon" href="assets/kurtz-icon.png">
   <link rel="canonical" href="https://kurtz.app/">
-  <link rel="stylesheet" href="portal.css">
   <script defer src="family.js"></script>
+  <link rel="stylesheet" href="reference.css?v=20261028-editorial-v2">
 </head>
-<body>
+<body class="index-page">
 <a class="skip" href="#main">Skip to content</a>
+<aside class="edition-rail" aria-label="Studio edition"><span>KURTZ — STUDIO EDITION</span><span>01 PLAYER / 02 KURTZ / 03 GASSI</span><span>OPEN · LOCAL · YOURS</span></aside>
 <header class="foyer-header">
-  <img src="assets/kurtz-wordmark-dark.svg" width="400" height="128" alt="kurtz">
-  <span class="header-note">a small corner of the internet.</span>
+  <div class="masthead">
+    <p class="issue-line"><span>INDEPENDENT SOFTWARE / A DIFFERENT WAY TO LIVE ONLINE</span><span>VOL. 01 — 2026</span></p>
+    <div class="masthead-main"><img src="assets/kurtz-wordmark-dark.svg" width="400" height="128" alt="kurtz"><p class="three-doors"><strong>THREE DOORS.</strong><br>ONE PRIVATE<br>DIGITAL LIFE.<small>PLAYER / KURTZ / GASSI</small></p></div>
+  </div>
+  <div class="no-defaults"><p>NO <br>DEFAULTS.</p><a href="#index">01 / 03 — OPEN THE INDEX ↗</a></div>
 </header>
-<main id="main" class="foyer">
-  <div class="invitation"><h1>Come on in.</h1><p>Make yourself at home.</p></div>
-  <nav class="doors" aria-label="Explore the kurtz universe">
-    <a class="destination cinema" href="player/" aria-labelledby="player-name player-note">
-      <div class="room" aria-hidden="true">
-        <div class="doorway">
-          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/cinema-poster.webp" data-animated-src="assets/kurt/cinema.webp" data-duration="6000" width="768" height="512" alt="" decoding="async"></div>
-          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
-        </div>
-        <span class="floor-light"></span>
-      </div>
-      <div class="door-label"><h2 id="player-name">kurtz <span>video player</span></h2><p id="player-note">Press play. <span aria-hidden="true">↗</span></p></div>
-    </a>
-    <a class="destination studio" href="preview/" aria-labelledby="preview-name preview-note">
-      <div class="room" aria-hidden="true">
-        <div class="doorway">
-          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/operator-poster.webp" data-animated-src="assets/kurt/operator.webp" data-duration="4167" width="768" height="512" alt="" decoding="async"></div>
-          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
-        </div>
-        <span class="floor-light"></span>
-      </div>
-      <div class="door-label"><h2 id="preview-name">kurtz <span class="preview-mark">preview</span></h2><p id="preview-note">A little look ahead. <span aria-hidden="true">↗</span></p></div>
-    </a>
-    <a class="destination lab" href="gassi/" aria-labelledby="gassi-name gassi-note">
-      <div class="room" aria-hidden="true">
-        <div class="doorway">
-          <div class="interior"><span class="lamp"></span><img class="kurt-scene" src="assets/kurt/benchmark-poster.webp" data-animated-src="assets/kurt/benchmark.webp" data-duration="2000" width="768" height="512" alt="" decoding="async"></div>
-          <span class="door-leaf"><span class="door-panel"></span><span class="door-hinges"></span><span class="handle"></span></span>
-        </div>
-        <span class="floor-light"></span>
-      </div>
-      <div class="door-label"><h2 id="gassi-name">gassi <span>benchmark</span></h2><p id="gassi-note">Coming soon. <span aria-hidden="true">↗</span></p></div>
-    </a>
-  </nav>
+<main tabindex="-1" id="main" class="foyer">
+  <section class="doors" id="index" aria-label="Explore the kurtz universe">
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <p class="eyebrow">AN OPEN INTERNET, ON YOUR TERMS.</p>
+      <h1 id="manifesto-title">THE <br>INTERNET <br>ISN’T <br><span>THEIR <br>PROPERTY.</span></h1>
+      <div class="paper-card"><span class="header-note">a small corner of the internet.</span><p>Your digital life. Actually yours.</p></div>
+      <div class="rules-strip"><h2>THE RULES<br>ARE YOURS.</h2><p>OPEN SOURCE.<br>BUILT AROUND YOU.</p></div>
+    </section>
+    <article class="destination cinema">
+      <div class="door-heading"><span class="door-number" aria-hidden="true">01</span><h2 id="player-name">kurtz <span>video player</span></h2></div>
+      <p class="door-description">Local files. Your Jellyfin library.<br>macOS available. iPhone / iPad &amp; Apple TV in development.</p>
+      <div class="cinema-proof"><a class="door-label" href="player/" aria-labelledby="player-name player-note"><p id="player-note">Press play. <span aria-hidden="true">↗</span></p></a>
+      <figure class="index-capture"><img src="assets/desktop-library-384.webp" width="384" height="240" alt="Real kurtz Jellyfin library capture on a staged Mac desktop."><figcaption>REAL CAPTURE / STAGED DESKTOP</figcaption></figure></div>
+    </article>
+    <article class="destination studio">
+      <div class="door-heading"><span class="door-number" aria-hidden="true">02</span><h2 id="preview-name">kurtz <span class="preview-mark">preview</span></h2></div>
+      <p class="eyebrow">KURTZ PLATFORM / IN DEVELOPMENT</p>
+      <p class="door-description">Documents, email, photos and films. A private AI assistant. A look at what’s taking shape.</p>
+      <a class="door-label" href="preview/" aria-labelledby="preview-name preview-note"><p id="preview-note">A little look ahead. <span aria-hidden="true">↗</span></p></a>
+    </article>
+    <article class="destination lab">
+      <div class="door-heading"><span class="door-number" aria-hidden="true">03</span><h2 id="gassi-name">gassi <span>benchmark</span></h2></div>
+      <p class="door-description">A little lab for comparing local AI models. We’re getting it ready.</p>
+      <a class="door-label" href="gassi/" aria-labelledby="gassi-name gassi-note"><p id="gassi-note">Coming soon. <span aria-hidden="true">↗</span></p></a>
+    </article>
+    <div class="stack-panel"><p class="sticker">OWN THE STACK.<br>KEEP THE KEYS.</p></div>
+    <section class="invitation"><p class="eyebrow">USER MANUAL 001 —</p><h2>MAKE <br>IT <br>YOURS.</h2><div><h3>Come on in.</h3><p>Make yourself at home.</p></div></section>
+  </section>
+  <nav class="index-bar" aria-label="Product index"><a href="player/">01 / PLAYER — WATCH →</a><a href="preview/">02 / KURTZ — EXPLORE →</a><a href="gassi/">03 / GASSI — COMING SOON →</a><a href="https://github.com/ralleur/kurtz">↗ GITHUB / DOCUMENTATION</a></nav>
+  <div class="closing-line"><p>SELF-HOSTED.<br>NOT SELF-SERIOUS.</p><p>THREE DOORS. ONE PRIVATE DIGITAL LIFE.<br>KURTZ.APP / 2026</p></div>
 </main>
 <footer class="foyer-footer">
   <a class="byline" href="https://www.youtube.com/@ralleurapps">a place by <strong>ralleur.</strong></a>
-  <button class="motion-toggle" type="button" data-motion-toggle hidden><span aria-hidden="true">Ⅱ</span><span data-motion-label>Pause animations</span></button>
-  <nav aria-label="More links"><a href="privacy.html">Privacy</a><a href="credits.html#kurt">Credits</a></nav>
+  <nav aria-label="More links"><a href="privacy.html">Privacy</a><a href="credits.html">Credits</a></nav>
 </footer>
 </body>
 </html>

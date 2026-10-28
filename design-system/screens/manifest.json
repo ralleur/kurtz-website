@@ -1,0 +1,177 @@
+{
+  "reference": "kurtz Editorial Reference v2",
+  "date": "2026-10-28",
+  "browser": "Chromium 145 headless",
+  "state": "Full page, default disclosures, fonts and all product images loaded; reduced motion produces the same static layout.",
+  "sourceEvidence": "after4 capture series",
+  "screens": [
+    {
+      "file": "home-390.webp",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 3155
+      },
+      "bytes": 96580,
+      "sha256": "e2846f5b3b0e9c0d58798aa7fdf00ae94dd4c16efc9e5771f6cfab11affa4f89"
+    },
+    {
+      "file": "home-1440.webp",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 1328
+      },
+      "bytes": 112520,
+      "sha256": "443b74778cc1ce46f4ad5e3e1acb1aed578e2eec4187bf39bc890717604b1267"
+    },
+    {
+      "file": "player-390.webp",
+      "route": "/player/",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 8553
+      },
+      "bytes": 267192,
+      "sha256": "0ba42d272fbdfb9a38cf8dbc5b7bfdef2d43b29463ccc6b13a457b253a432a03"
+    },
+    {
+      "file": "player-1440.webp",
+      "route": "/player/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 5751
+      },
+      "bytes": 385926,
+      "sha256": "f55093f5afcb6bcd8ec7da005c19a1ab6b2b11ab555d54b4a3098f124da5bd01"
+    },
+    {
+      "file": "preview-390.webp",
+      "route": "/preview/",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 9125
+      },
+      "bytes": 259728,
+      "sha256": "4fb261c2bfaec15c66debab92c8610842da61a06663b3c6614df71e6590220c3"
+    },
+    {
+      "file": "preview-1440.webp",
+      "route": "/preview/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 6235
+      },
+      "bytes": 361854,
+      "sha256": "29519756b677d2ced10b503bb2e903e62e5f8d3999ca315fa3deed2139ed79b6"
+    },
+    {
+      "file": "gassi-390.webp",
+      "route": "/gassi/",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 1760
+      },
+      "bytes": 57982,
+      "sha256": "5e01ac72c7a96d555ee8031677c3e5cec342b1620758123d0ccd418d26c95a21"
+    },
+    {
+      "file": "gassi-1440.webp",
+      "route": "/gassi/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 985
+      },
+      "bytes": 86868,
+      "sha256": "44082b5d8f24fde730e70197aa9be42beae58f61d206170e6aab234cf3ff7540"
+    },
+    {
+      "file": "privacy-390.webp",
+      "route": "/privacy.html",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 2844
+      },
+      "bytes": 122452,
+      "sha256": "d17a430640599f6470052dcb317f47e616972c9de8a442aa6dd901bd474dcb5f"
+    },
+    {
+      "file": "privacy-1440.webp",
+      "route": "/privacy.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 1692
+      },
+      "bytes": 141072,
+      "sha256": "1f78722f1144f1a6507cee379b30cade155418aee781cfbd3d9b20f656e7c115"
+    },
+    {
+      "file": "credits-390.webp",
+      "route": "/credits.html",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "image": {
+        "width": 390,
+        "height": 6445
+      },
+      "bytes": 328782,
+      "sha256": "a992d4dd26741d0eaa3c28ae44badf4e591905f6e209b456ba79a7376059eefd"
+    },
+    {
+      "file": "credits-1440.webp",
+      "route": "/credits.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "image": {
+        "width": 1440,
+        "height": 3544
+      },
+      "bytes": 348692,
+      "sha256": "c1403e9215b437a13245aa484ff7d53bcea9301001933ae05d151e25dd7144c5"
+    }
+  ]
+}
