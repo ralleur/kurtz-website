@@ -66,3 +66,20 @@ The owner’s 28 October decision removes the former mascot scenes, their assets
 scene-only CSS, playback code and asset-specific attribution from the website.
 The legacy player deep-link redirects remain in `family.js`. Other product texts,
 links, status statements, captures, media licenses and functionality are preserved.
+
+## Search discoverability
+
+The index, Mac player and development preview use descriptive titles and
+metadata while retaining the editorial headlines. Only the available Mac
+player is marked as `SoftwareApplication`; the preview remains clearly in
+development. `robots.txt` points to the public `sitemap.xml`. Existing captures,
+release links and license notices remain unchanged.
+
+The historical `ralleur/kurtz` Pages site has a separate website-only migration
+change forwarding the old homepage to `/player/`, preserving deep links, and
+forwarding credits/privacy to their new addresses. Publish this website before
+the migration. The old application repository is not the source of this site.
+
+Submit `https://kurtz.app/sitemap.xml` in the owner's existing Google Search
+Console and Bing Webmaster Tools properties after publication. Those accounts
+are needed to verify actual indexing and topic-query impressions.
